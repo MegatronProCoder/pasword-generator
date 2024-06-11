@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+}
+.container{
+    background-color: hsla(200, 100%, 50%, 0.678);
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    margin: 1rem;
+    border-radius: 8px;
+
+}
+@media(max-width:370px){
+    .container{
+        scale: .7;
+    }
+}
+
+.password-input{
+    background-color: white;
+    padding: 1rem;
+    color: black;
+    border-radius: 8px;
+    height: 4rem;
+    word-break: break-all;
+    border: 2px solid black ;
+    margin-top: 1rem;
+}
+.passwordGeneratorForm{
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 1rem;
+    column-gap: 2rem;
+    margin-block:1rem 1.5rem;
+    align-items: center;
+}
+.numberContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+label{
+    text-align: left;
+    font-weight: bold;
+}
+.characterNumber{
+    width: 2.1rem;
+}
+.btn{
+    grid-column: span 2;
+    padding: 4px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 2rem;
+
+}
+
